@@ -10,7 +10,7 @@ import AdminPage from "./components/AdminPage";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
-        <Route path="/forside" exact element={<App/>}/>
+        <Route path="/" exact element={<App/>}/>
         <Route path="/matches" exact element={<Matches/>}/>
         <Route path="/adminpage" exact element={<AdminPage/>}/>
 

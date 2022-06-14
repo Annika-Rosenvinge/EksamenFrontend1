@@ -8,7 +8,8 @@ const WelcomePage = ({name, role}) => {
     return (
         <div>
             <div className="divComp">
-                <p className="overskrift"> Velkommen </p>
+                <p className="headerText"> Velkommen til match system </p>
+                <p className="minorHeaderText">24 timers eksamens projekt</p>
             </div>
         </div>
 
