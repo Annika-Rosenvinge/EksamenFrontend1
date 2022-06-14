@@ -1,0 +1,46 @@
+  const setToken = (token) =>
+  {
+    localStorage.setItem('jwtToken', token)
+  }
+  const getToken = () =>
+  {
+    return localStorage.getItem('jwtToken')
+  };
+
+  const logged = () =>
+  {
+    const loggedIn = getToken() != null;
+    return loggedIn;
+  }
+
+  //Login function
+  const loginFunction = (userName, password, setLoggedIn) =>{
+    const options = makeOptions("POST", true,  {userName: userName, password: password});
+    return fetch(loginURL, options)
+        .then(res => {
+          setToken(res.token)
+          setLoggedIn(true);
+      }).catch((err => {
+        console.log(err)
+        }))
+  }
+
+  const makeOptions = (method, addToken, body) =>
+  {
+    const opts = {
+      method: method,
+      headers: {
+        "Content-type": "application/json",
+        'Accept': 'application/json',
+      }
+    };
+    if (addToken && logged())
+    {
+      opts.headers["x-access-token"] = getToken();
+    }
+    if (body)
+    {
+      opts.body = JSON.stringify(body);
+    }
+    return opts;
+  }

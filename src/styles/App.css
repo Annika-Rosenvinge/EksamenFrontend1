@@ -1,0 +1,175 @@
+.App {
+  text-align: left;
+}
+
+.errorPage{
+  text-align: center;
+  background-color: #ee4f4f;
+  color: #282c34;
+}
+
+.divPadding{
+  padding: 20px;
+  border-width: 20px;
+}
+
+.button-errorPage{
+  color: black;
+  background-color: grey;
+  padding: 15px 20px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  border: 5px #565555;
+}
+
+.btn{
+  color: #282c34;
+  background-color: #ce4a03;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+
+}
+
+/*header og footer styling */
+.header{
+  background-color: darkorange;
+  color: #282c34;
+  text-align: left;
+  padding: 10px;
+  position: center;
+  margin: auto;
+  border:solid 3px white;
+  border-radius: 5px;
+}
+
+.headerText{
+  color: #282c34;
+  font-size: 30px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.minorHeaderText{
+  color: #282c34;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;
+}
+
+.overskrift{
+  color: #282c34;
+  font-family: "Times New Roman", serif;
+}
+
+/* styling til components */
+.divComp{
+  background-color: rgba(252, 187, 115, 0.98);
+  color: #282c34;
+  padding: 5px;
+  border:solid 3px white;
+  border-radius: 2px;
+
+}
+th{
+  padding: 10px 20px;
+}
+tr:nth-child(even){
+  background-color: rgba(250, 174, 92, 0.98);
+}
+
+.tableStyle{
+  border: 1px #282c34 solid;
+  width: 100%;
+}
+.tableoverskrift{
+  color: #282c34;
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  text-align: center;
+}
+.tabletext{
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  text-align: inherit;
+}
+
+.grid-display{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.form-text{
+  color: #282c34;
+  font-size: 16px;
+  font-family: "Times New Roman", serif;
+  text-align: left;
+  float: left;
+  padding-left: 2px;
+}
+
+input[type=text], input[type =password]{
+  width: 100%;
+  float: top;
+  padding: 10px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+/* styling til tabbar */
+
+.tab-bar{
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: darkorange;
+  border-radius: 5px;
+}
+
+.tab-bar-link{
+  background-color: inherit;
+  float: left;
+  cursor: pointer;
+  padding: 16px 18px;
+  transition: 0.4s;
+  font-size: 22px;
+  text-decoration: none;
+}
+.tab-bar-link:hover{
+  background-color: #ce4a03;
+}
+
+.tab-bar-link:active{
+  background-color: #ab3d02;
+}
+.tab-bar-content{
+  display: none;
+}
+
+[data-toggle="toggle"]{
+  display: none;
+}
+.coll{
+  background-color: darkorange;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .coll:hover {
+  background-color: #c96f01;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: inherit;
+}
+
